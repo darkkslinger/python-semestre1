@@ -19,7 +19,7 @@ def sumapar(n):
 def sumainpar(n):
     suma = 0
     for num in n:
-        if num%2==1:
+        if num%2==0:
             suma+=num
     return suma
 
