@@ -19,15 +19,12 @@ def sumapar(n):
 def sumainpar(n):
     suma = 0
     for num in n:
-        if num%2==0:
+        if num%2!=0:
             suma+=num
     return suma
 
 c_n = int(input("¿Cuántos números desea operar?: "))
 nums = obtener_numeros(c_n) 
-sumanum=sumanumeros(nums)
-print(f"La suma de todos los números es: {sumanum}")
-sumapares=sumapar(nums)
-print(f"La suma de todos los números pares es: {sumapares}")
-sumaimpares=sumainpar(nums)
-print(f"La suma de todos los números impares es: {sumaimpares}")
+print(f"La suma de todos los números es: {sumanumeros(nums)}")
+print(f"La suma de todos los números pares es: {sumapar(nums)}")
+print(f"La suma de todos los números impares es: {sumainpar(nums)}")
